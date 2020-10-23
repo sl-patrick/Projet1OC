@@ -1,0 +1,512 @@
+/* WebAgency Style */
+
+@font-face {
+    font-family: 'roboto';
+    src: url('polices/roboto-regular.ttf') format('truetype');   
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('polices/roboto-bold.ttf') format('truetype');   
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('polices/roboto-italic.ttf') format('truetype');   
+    font-weight: normal;
+    font-style: italic;
+}
+
+	
+body
+{
+	margin: 0px;
+	padding: 0px; 
+}
+*
+{
+	font-family: roboto, arial, 'arial black', serif;
+}
+
+
+
+                             /* Menu et Logo */
+.menu-scroll
+{
+	position: fixed;
+	top: 0;
+	padding: 0 15%;
+	z-index: 1;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	width: 70%;
+}
+.menu-scroll ul
+{
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.menu-scroll li
+{
+	height: 78px;
+	display: flex;
+	align-items: center;
+	border-top: 4px solid transparent;
+}
+.menu-scroll li:hover 
+{
+	border-top: 4px solid rgb(92, 173, 211);
+}
+a
+{
+	text-decoration: none;
+	padding: 15px;
+	color: rgb(147, 147, 147);
+	font-size: 0.9em;
+}
+.menu-scroll li:hover a 
+{
+	color: rgb(0, 0, 0);
+}
+
+
+	
+
+                             /* Section accueil */
+.section-accueil
+{
+	position: relative;
+	margin: 80px 0 80px 0;
+}
+.barre-slide
+{
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.inner-slide
+{
+	height: 5px;
+	width: 15%;
+	background-color: rgb(92, 173, 211);
+}
+.image-presentation
+{
+	margin: 0;
+}
+.image-presentation img
+{
+ 	width: 100%;
+	vertical-align: bottom;
+}
+.texte-presentation
+{
+	position: absolute;
+	left: 15%;
+	top: 50%;
+	transform: translateY(-50%);
+	color: rgb(255, 255, 255);
+	width: 35%;
+}
+.texte-presentation h1
+{
+	font-size: 2.1em;
+	margin: 10px 0 10px 0;
+	line-height: 1;
+}
+.texte-presentation p
+{
+	font-size: 0.9em;
+	margin: 0 0 20px 0;
+}
+.button-accueil
+{
+	background-color: rgb(92, 173, 211);
+	color: white;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 -3px 0 rgb(70, 140, 173) inset;
+	height: 45px;
+	width: 120px;
+	font-size: 1.1em;
+}
+span
+{
+	color: rgb(92, 173, 211);
+}
+.hcircle
+{
+	width: 30px;
+	height: 60px;
+	border-radius: 0 80px 80px 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 50%;
+	display: flex;
+	align-items: center;
+	color: rgb(255, 255, 255);
+}
+.hcircle-right
+{
+	transform: translateY(-50%) rotate(0.5turn);
+	right: 0;		
+}
+.hcircle-right i
+{
+	transform: translateX(50%) rotate(0.5turn);
+}
+.hcircle-left
+{
+	transform: translateY(-50%);	
+}
+.hcircle-left i
+{
+	transform: translateX(50%);
+}
+
+                             /* Section nos services */
+.section-services
+{
+	padding-top: 10px;
+}
+.head-section
+{
+	text-align: center;
+}
+.head-section h2
+{
+	font-size: 2.5em;
+	margin: 0;
+}                             
+
+.head-section p
+{
+	margin: 0;
+}
+.circle-s hr
+{
+	position: absolute;
+	width: 150px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	border: 0;
+	height: 1px;
+	background-color: rgb(211, 211, 211);
+}
+.circle-s
+{
+	width: 25px;
+	height: 25px;
+	margin: auto;
+	position: relative;
+}
+.inner-cs
+{
+	width: 15px;
+	height: 15px;
+	background-color: rgb(92, 173, 211);
+	border-radius: 50%;
+	position: absolute;
+	border: 5px solid white;
+}
+.container-services
+{
+	margin: 20px 0;
+	display: flex;
+}
+.icon-text
+{
+	margin-top: 70px;
+	width: 50%;
+}
+.ui, .ux, .seo
+{
+	display: flex;
+	align-items: center;
+}
+.texte-ux, .texte-ui, .texte-seo
+{
+	width: 75%;
+}
+.icon-text h3
+{
+	margin-bottom: 10px;
+}
+.decoration
+{
+	width: 50%;
+	margin: 0;
+	text-align: center;
+}
+.icon-circle
+{
+	position: relative;
+	border:1px solid rgb(217, 217, 217);
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 25px;
+}
+.small-circle
+{
+	position: absolute;
+	border: 4px solid rgb(255, 255, 255);
+	right: 0;
+	top: 40%;
+	transform: translateX(10px);
+	background-color: rgb(92, 173, 211);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+.icon-circle i
+{
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	color: rgb(92, 173, 211);
+}
+
+
+
+
+                             /* Section nos projets */ 
+.section-projets
+{
+	background-color: rgb(245, 245, 245);
+	padding-top: 10px;
+}                               
+.head-projets
+{
+	text-align: center;
+}  
+.head-projets h2
+{
+	font-size: 2.5em;
+	margin: 0;
+}
+.circle-p hr
+{
+	position: absolute;
+	width: 150px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	border: 0;
+	height: 1px;
+	background-color: rgb(211, 211, 211);
+}
+.circle-p
+{
+	width: 25px;
+	height: 25px;
+	margin: auto;
+	position: relative;
+
+}
+.inner-circle
+{
+	width: 15px;
+	height: 15px;
+	background-color: rgb(92, 173, 211);
+	border-radius: 50%;
+	position: absolute;
+	border: 5px solid white;
+}
+.section-projets table
+{
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+td
+{
+	background-color: rgb(229, 229, 229);
+	padding: 10px;
+	position: relative;
+}
+td:hover
+{
+	background-color: rgb(92, 173, 211);
+	box-shadow: 0 -4px rgb(70, 140, 173) inset;	
+}
+td:hover a
+{
+	color: white;
+}
+td:hover:after
+{
+	content: " ";
+	width: 0;
+	height: 0;
+	border-left:10px solid transparent; 
+	border-right:10px solid transparent;
+	border-top:15px solid rgb(70, 140, 173);
+	position: absolute;
+	top: 90%;
+	right: 50%;
+	transform: translateX(50%);
+}
+.border-left
+{
+	border-radius: 5px 0 0 5px;
+}
+.border-right
+{
+	border-radius: 0 5px 5px 0;
+}
+.section-projets a
+{
+	text-decoration: none;
+	color: rgb(101, 105, 110);
+}
+.real
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+}
+.real figure
+{
+	position: relative;
+	margin: 20px;
+	width: calc(25% - 40px);
+}
+figcaption
+{
+	display: none;
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 20px);
+	height: 30%;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 10px;
+}
+figure:hover figcaption
+{
+	display: block;
+	color: rgb(255, 255, 255);
+}
+figcaption h4, figcaption p
+{
+	margin:0 0 5px 0;
+}
+figure .photo
+{
+	width: 100%;
+	vertical-align: bottom;
+}
+.circle-fig
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	right: 10px;
+	top:-20px;
+	background-color: rgb(74, 157, 177);
+	border: 2px solid rgb(255, 255, 255);
+}
+.circle-fig i
+{
+	transform: translate(60%, 60%);
+	color: rgb(255, 255, 255);
+}
+
+
+
+
+
+                             /* Section contact */
+
+.formulaire
+{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.bold-black
+{
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.formulaire h2
+{
+	margin-left: 15px;
+}
+.formulaire p
+{
+	margin: 0 0 0 15px;
+	font-size: 0.9em;
+}   
+.input-style, textarea
+{
+	display: block;
+	box-sizing: border-box;
+	width: 300px;
+	height: 30px;
+	margin: 15px;
+	padding: 0px 0 0 10px;
+	border-radius: 5px;
+	border: 1px solid rgb(204, 204, 204);
+}
+textarea
+{
+	height: 150px;
+	padding-top: 5px;
+}    
+.button
+{
+	margin: 15px;
+	background-color: rgb(92, 173, 211);
+	color: white;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 -3px 0 rgb(70, 140, 173) inset;
+	height: 35px;
+	width: 100px;
+	font-size: 1em;
+}
+.section-contact
+{
+	position: relative;
+	height: 600px;
+}                     
+.section-contact .formulaire
+{
+	position: absolute;
+	right: 10%;
+	top: 10%;
+}
+.section-contact iframe
+{
+	width: 100%;
+	height: 100%;
+}
+.overlay
+{
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	background-color: rgba(92, 173, 211, 0.2);
+}
+.overlay:hover
+{
+	display: none;
+}
+
+
+
+
+
